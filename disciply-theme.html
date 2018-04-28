@@ -2,35 +2,6 @@
 
 <dom-module id="disciply-theme">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]!</h2>
+    <style include="disciply-theme-reset"></style>
   </template>
-
-  <script>
-    /**
-     * `disciply-theme`
-     * 
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
-    class DisciplyTheme extends Polymer.Element {
-      static get is() { return 'disciply-theme'; }
-      static get properties() {
-        return {
-          prop1: {
-            type: String,
-            value: 'disciply-theme'
-          }
-        };
-      }
-    }
-
-    window.customElements.define(DisciplyTheme.is, DisciplyTheme);
-  </script>
 </dom-module>
