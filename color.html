@@ -1,3 +1,61 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+## Color variables and classes.  See demo page for available values.
+### Using CSS Variables
+[CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) is the preferred method over classes.
+All components colors are built on the core CSS variables to allow for easy theming.
+They are supported by most browsers but Polymer provides a shim where needed.
+
+    <style is="custom-style">
+
+        .foobar {
+            color: var(--inactive-blue);
+        }
+
+    </style>
+
+    <span class="foobar">Hello World</span>
+
+### Using CSS Classes
+These are provided as a convenience for applicatoins with very simple component needs.
+
+    <span class="alert-orange">Hello World</span>
+    <span class="background-alert-orange">Hello World</span>
+
+@group Seed Elements
+@element dprd-colors
+@demo demo/index.html
+-->
+<custom-style>
+  <style>
+    html {
+      --message-grey: #78899E;
+      --inactive-grey: #A1AFC0;
+      --detail-grey: #D0D7DE;
+      --chrome-grey: #ECF1F4;
+
+      --good-to-go-green: #4EB86C;
+      --alert-orange: #FF4605;
+      
+      --background-component: #EBF6FC;
+
+      --primary-active: #253B56;
+      --primary-action: #1994D7;
+      --primary-hover: #0470AB;
+      --primary-disabled: #BADFF3;
+
+      --foreground-header: #253B56;
+      --foreground-body: #253B56;
+
+      --transactional-action: #61941B;
+      --transactional-hover: #58831B;
+      --transactional-active: #33490F;
+      --transactional-disabled: #D6E5BA;
+    }
+  </style>
+</custom-style>
+
 <dom-module id="disciply-theme-color">
   <template>
     <style></style>
